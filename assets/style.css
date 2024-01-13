@@ -1,0 +1,32 @@
+body {
+  <style>
+  $primary: #906427;
+$darkgreen:#392C1E;
+$darkgreen:  #292222;
+$font-family-sans-serif: "Montserrat", sans-serif !default;
+
+@import "../node_modules/bootstrap/css/bootstrap";
+   ul{
+       list-style-type: none;
+       background-color: #f1f1f1;
+       padding: 10px;
+      }     
+                    
+     li {
+       display: inline;
+     }
+
+     a {
+       display: inline-block;
+       text-decoration: none;
+       color: rgb(0, 0, 0);
+       background-color: #f1f1f1;
+       padding: 10px 20px;
+       margin: 5px;
+     }
+
+     a:hover {
+       background-color: #e1e1e1;
+     } 
+   </style>
+    }
