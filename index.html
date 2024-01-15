@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Mon projet bootstrap</title>
+    <!-- Inclure le fichier CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Inclure le fichier CSS compilé de styles.scss -->
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles-mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="styles-tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles-desktop.css">
 </head>
 
 <body>
@@ -34,11 +39,30 @@
                     </ul>
                 </div>
         </nav>
+
+        <!-- Contenu principal -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Bienvenue sur mon site web</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lobortis magna id
+                        efficitur. Ut vitae quam sit amet est sollicitudin convallis. Donec scelerisque ultricies ante
+                        at luctus. Sed dapibus sem eu purus elementum, sit amet bibendum sapien convallis. Nunc quis
+                        sagittis mi, eget pharetra velit. Vestibulum vel tortor hendrerit, consequat leo a, varius eros.
+                        Duis eget massa vitae mi tristique laoreet. Nullam sodales, felis a volutpat malesuada, ex dolor
+                        vestibulum ipsum, eu accumsan nunc lectus sed risus.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="legumes-frais-vegetabes.avif" alt="Image de démonstration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
     </header>
     <main>
         <section id="accueil">
-            <h2 class="text-center"><a>Accueil</a></h2>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit magna id
+            <h2><a>Accueil</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit magna id
                 massa mattis, ut pulvinar erat vulputate. Nulla eget justo id ante commodo posuere et sed justo. In id
                 massa in neque
                 dignissim rhoncus. Curabitur eu nibh sed elit sollicitudin euismod. Vivamus finibus nibh id nibh cursus,
@@ -48,9 +72,9 @@
         </section>
         <section id="Galerie">
             <left>
-                <h2 class="text-center"><a>Galerie</a></h2>
+                <h2><a>Galerie</a></h2>
             </left>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas vitae mauris
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas vitae mauris
                 pulvinar venenatis. Proin sagittis vulputate tincidunt. Proin condimentum magna ac nibh viverra, eu
                 tincidunt metus dictum.
                 Nam vitae felis vel nisi imperdiet sollicitudin. Nunc ornare ullamcorper ex, ut euismod purus dignissim
@@ -59,9 +83,9 @@
         </section>
         <section id="La carte">
             <left>
-                <h2 class="text-center"><a>La carte</a></h2>
+                <h2><a>La carte</a></h2>
             </left>
-            <p class="text-center">Cras vitae elit mauris. Cras eros erat, tempor sit amet faucibus et, commodo eu
+            <p>Cras vitae elit mauris. Cras eros erat, tempor sit amet faucibus et, commodo eu
                 augue. In ultrices ipsum ut arcu pretium, eget faucibus risus mollis. Pellentesque habitant morbi
                 tristique senectus et netus et
                 malesuada fames ac turpis egestas. Aliquam nec sem urna. Nulla ultrices pellentesque iaculis. Nullam
@@ -71,9 +95,9 @@
         </section>
         <section id="La réservation">
             <left>
-                <h2 class="text-center"><a>La réservation</a></h2>
+                <h2><a>La réservation</a></h2>
             </left>
-            <p class="text-center">Curabitur et malesuada nisi. Donec euismod nisl elit, sit amet mattis felis dignissim
+            <p>Curabitur et malesuada nisi. Donec euismod nisl elit, sit amet mattis felis dignissim
                 eu. Nullam elementum ligula ultricies tortor consectetur, id congue dolor convallis. Mauris id purus
                 dignissim
                 justo porta fermentum auctor id augue. Aliquam at ornare orci. Integer aliquam dignissim magna eget
@@ -82,9 +106,9 @@
         </section>
         <section id="Mon compte">
             <left>
-                <h2 class="text-center"><a>Mon compte</a></h2>
+                <h2><a>Mon compte</a></h2>
             </left>
-            <p class="text-center">Lorem ipsum dolor sit amet. Eos optio sunt ex nesciunt atque sit asperiores deserunt
+            <p>Lorem ipsum dolor sit amet. Eos optio sunt ex nesciunt atque sit asperiores deserunt
                 non autem minus. Eum voluptatem adipisci hic voluptas corrupti eum necessitatibus asperiores id velit
                 possimus. Et blanditiis delectus aut nihil dolores a enim provident aut ducimus reprehenderit. Et
                 voluptatem libero rem maxime tempore At omnis deserunt At numquam delectus non doloribus odit est labore

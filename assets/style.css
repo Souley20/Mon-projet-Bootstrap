@@ -23,9 +23,41 @@ li {
 a {
   text-align: justify;
   justify-content : center;
+  margin: 0 10px;
   color: darkslategray;
 }
 p {
 	text-align: justify;
+  margin: 0 10px;
 	color: auto;
+}
+// Importer les fichiers Sass de Bootstrap pour les règles de média queries
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Ajouter les règles de média queries pour les écrans de taille moyenne et supérieure
+@media screen and (min-width: 768px) {
+  body {
+    font-size: $font-size-base + 2px;
+  }
+
+// Ajouter les règles de média queries pour les écrans de grande taille
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+main {
+  margin: 0 10px;
+  max-width: 1200px;
+
+}
+/* style de base pour le site*/
+section {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  padding: 10px;
+  margin: 0 10px;
+
 }
